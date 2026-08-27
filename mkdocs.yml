@@ -1,0 +1,96 @@
+site_name: CADS Manifest Marketplace
+site_description: Signed service manifests for ct-agent — what actually works, and how it was checked.
+site_url: https://scimbe.github.io/CADS-agent-marketplace-docs/
+repo_url: https://github.com/scimbe/CADS-agent-marketplace
+repo_name: scimbe/CADS-agent-marketplace
+edit_uri: https://github.com/scimbe/CADS-agent-marketplace-docs/edit/main/docs/
+
+# The docs follow Diátaxis: four kinds of text answer four different questions,
+# and mixing them is the most common reason documentation rots.
+#
+#   Tutorials     "teach me"        learning, held by the hand, one path that works
+#   How-to        "help me do X"    task-oriented, assumes competence
+#   Reference     "tell me what is" look-up, dry, complete
+#   Explanation   "why is it so"    understanding, reasons and connections
+#
+# One more rule specific to this project: every claim is marked measured,
+# audited, or not-built. Nothing is described that was not observed running.
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  icon:
+    logo: material/shield-check
+
+extra_css:
+  - stylesheets/marketplace.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: en
+
+nav:
+  - Start: index.md
+  - Tutorials:
+      - tutorials/index.md
+      - Publish your first manifest: tutorials/publish-your-first-manifest.md
+  - How-to:
+      - how-to/index.md
+      - Run the registry locally: how-to/run-the-registry-locally.md
+      - Sign a manifest: how-to/sign-a-manifest.md
+      - Read a guardrail verdict: how-to/read-a-guardrail-verdict.md
+  - Reference:
+      - reference/index.md
+      - Registry API: reference/registry-api.md
+      - Manifest schema: reference/manifest-schema.md
+      - Guardrail rules: reference/guardrail-rules.md
+      - Installer kinds: reference/installer-kinds.md
+  - Explanation:
+      - explanation/index.md
+      - The trust model: explanation/the-trust-model.md
+      - The harness and its cage: explanation/the-harness-cage.md
+      - Measured, not claimed: explanation/measured-not-claimed.md

@@ -1,0 +1,61 @@
+/* Docs theme for the CADS Manifest Marketplace.
+ *
+ * Same family palette as the other CADS docs sites — the deep CADS blue, with a
+ * signing-green accent. Docs and project should read as one thing.
+ */
+
+:root {
+  --cads-blue: #204c86;
+  --cads-blue-dark: #12305a;
+  --cads-light: #b5c4d8;
+  --cads-mid: #8fa6c4;
+  --cads-green: #3f8f5b;
+
+  --md-primary-fg-color: var(--cads-blue);
+  --md-primary-fg-color--light: var(--cads-mid);
+  --md-primary-fg-color--dark: var(--cads-blue-dark);
+  --md-accent-fg-color: var(--cads-green);
+  --md-typeset-a-color: var(--cads-blue);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--cads-blue-dark);
+  --md-accent-fg-color: var(--cads-green);
+  --md-typeset-a-color: var(--cads-light);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--cads-blue);
+  color: #fff;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: var(--cads-blue-dark);
+}
+.md-typeset table:not([class]) { display: block; overflow-x: auto; }
+.md-typeset code { font-size: 0.85em; }
+
+/* Provenance: the whole point of this site is the distinction between a claim
+   that was measured on a running system, one audited from someone else's run,
+   and one that is deliberately not built. Each gets a visible mark. */
+.measured, .audited, .notbuilt {
+  padding: 0.6rem 1rem;
+  border-radius: 0 4px 4px 0;
+  margin: 1rem 0;
+}
+.measured { border-left: 4px solid var(--cads-green); background: rgba(63, 143, 91, 0.09); }
+.audited  { border-left: 4px solid var(--cads-blue);  background: rgba(32, 76, 134, 0.08); }
+.notbuilt { border-left: 4px solid #b0870f; background: rgba(176, 135, 15, 0.09); }
+
+.prov {
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.1rem 0.5rem; border-radius: 999px; vertical-align: middle;
+}
+.prov.m { color: #2c6a41; background: rgba(63,143,91,0.16); }
+.prov.a { color: #1c3f6f; background: rgba(32,76,134,0.14); }
+.prov.n { color: #8a690b; background: rgba(176,135,15,0.16); }
+[data-md-color-scheme="slate"] .prov.m { color: #7fd39a; }
+[data-md-color-scheme="slate"] .prov.a { color: var(--cads-light); }
+[data-md-color-scheme="slate"] .prov.n { color: #e0b94a; }
+
+.md-header__topic .md-ellipsis { font-weight: 700; letter-spacing: 0.02em; }
