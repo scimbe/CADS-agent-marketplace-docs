@@ -10,13 +10,15 @@ has its own docs site — this page says so plainly rather than linking somewher
   [CADS-DEMO-sort](https://github.com/scimbe/CADS-DEMO-sort).
 - **[Local LLM demo](https://scimbe.github.io/CADS-DEMO-local-llm-docs/)** — source at
   [CADS-DEMO-local-llm](https://github.com/scimbe/CADS-DEMO-local-llm).
+- **[Kali desktop](https://scimbe.github.io/CADS-kali-desktop-docs/)** — full Kali Linux desktop
+  streamed to the browser, gated by Keycloak (`kali.bunsenbrenner.org`), source at
+  [CADS-kali-desktop](https://github.com/scimbe/CADS-kali-desktop).
 
 ## Documented, no dedicated site yet
 
 Real, running services — the documentation lives in the repo's own README rather than a
 published site.
 
-- **[Kali desktop](https://github.com/scimbe/CADS-kali-desktop)** (`kali.bunsenbrenner.org`)
 - **[Code-Review demo](https://github.com/scimbe/CADS-DEMO-codereview)** — static-tool + LLM
   code review following the Harness Correction methodology; Phase 1 only, no VS Code
   integration yet.
