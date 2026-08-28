@@ -94,3 +94,4 @@ nav:
       - The trust model: explanation/the-trust-model.md
       - The harness and its cage: explanation/the-harness-cage.md
       - Measured, not claimed: explanation/measured-not-claimed.md
+  - Demos: demos/index.md

@@ -41,6 +41,10 @@ runtime, and documented as such.
     Why a signature is never enough, how the harness is caged, and why this site marks
     measured versus claimed.
 
+- :material-application-brackets: **[Demos](demos/index.md)**
+
+    What's actually running on top of `ct-agent`, and whether it has docs of its own.
+
 </div>
 
 ---
