@@ -64,3 +64,8 @@ Each `parameters[]` entry is `{name, type, …}`, where `type` selects the bound
 multiselect-with-`note` parameters) was signed and round-tripped through the live registry
 byte-identically on 2026-08-29 — the block came back exactly as signed.
 </div>
+
+!!! note "Source pending merge"
+    The hosted `registry.bunsenbrenner.org` already runs the `manifest-core` change that adds this
+    field, but its source lands via `CADS-agent-marketplace` **PR #43** (not yet merged to `main`).
+    Reading the code at `main` will not show `demo_prompt` until that merges.
