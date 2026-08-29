@@ -59,9 +59,11 @@ runtime, and documented as such.
 | Workspace test suite, no daemon | <span class="prov m">measured</span> — 100 / 100 |
 | Harness: bounded local-LLM bundle edit | <span class="prov a">audited</span> |
 | Harness containment (3 adversarial cases) | <span class="prov a">audited</span> |
+| Hosted public registry (`registry.bunsenbrenner.org`) | <span class="prov m">measured</span> — 7-demo portfolio published, byte-identical refetch, 2026-08-29 |
+| Guided `demo_prompt` config, signed | <span class="prov m">measured</span> — signed &amp; round-tripped byte-identical |
 | Compose bundle **activation** (needs Docker) | <span class="prov n">not run here</span> |
 | Kubernetes installer | <span class="prov n">by design</span> — schema only |
 | Real payments | <span class="prov n">by design</span> — ledger only |
-| Hosted registry / public dashboard | <span class="prov n">not built</span> |
+| Public human-facing catalogue UI | <span class="prov n">not built</span> — the hosted registry is a JSON API |
 
 The [Reference](reference/index.md) gives each of these its own dry, complete entry.
