@@ -80,6 +80,7 @@ nav:
       - Publish your first manifest: tutorials/publish-your-first-manifest.md
   - How-to:
       - how-to/index.md
+      - Install and customize a demo locally: how-to/install-and-customize-a-demo.md
       - Run the registry locally: how-to/run-the-registry-locally.md
       - Sign a manifest: how-to/sign-a-manifest.md
       - Read a guardrail verdict: how-to/read-a-guardrail-verdict.md
